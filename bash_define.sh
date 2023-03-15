@@ -11,6 +11,9 @@ echo "An array of all arguments :" $@                     #Tüm argümanların a
 echo "Bash is working ?" $?                               #Bash script başarı ile çalıştı mı?
 echo "komut işlem numarası" $$                            #çalıştırılan komutun numarasını verir
 
+
+NOT:bu script çalıştırılırken değerler ./dosyaname --> kısmından sonra yanına eklenmelidir.
+bash asuman 1 2 3 4 5  gibi yazılmalıdır.
 ------------------------------------------------------------------------------------------------------------
 
 #bash script nedir?

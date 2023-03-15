@@ -8,3 +8,4 @@ read -p "Bir rakam girin: " int2
 add $int1 $int2
 echo "Sonuc : " $?
 
+
