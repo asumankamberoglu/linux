@@ -10,7 +10,8 @@ echo "String form of all arguments :" $*                  #Tüm argümanların s
 echo "An array of all arguments :" $@                     #Tüm argümanların array bir şekli
 echo "Bash is working ?" $?                               #Bash script başarı ile çalıştı mı?
 echo "komut işlem numarası" $$                            #çalıştırılan komutun numarasını verir
-echo 
+
+------------------------------------------------------------------------------------------------------------
 
 #bash script nedir?
 bash script, unix de mevcut olan en popüler programlama araçlarından biridir.
@@ -29,52 +30,52 @@ C kabuğuna dahil olanlar;
 c shell                csh
 TENEX(TOPS) c shell    tcsh
 
-
+-----------------------------------------------------------------------------------------------------------------
 cat /etc/shells                            mevcut shell leri görürüz.
 man bash                                   bash a dair tüm açıklamalar
 #!                                         shebang
 /bin/bash                                  dosya yolu ve shell adını gösterir
 which bash                                 bash bulunduğu dizini gösterir
 echo #SHELL                                hangi shell old. ve dosya yolumuzu gösterir
-
+-----------------------------------------------------------------------------------------------------------------
 çalıştırma yöntemleri;
 bash <dosya adı>                           bash asuman
 chmod +x <dosya adı>    execute yetkisi    chmod +x asuman
 ./<dosya adı>                              ./asuman
 
-
+---------------------------------------------------------------------------------------------------------------------
 değişken atama
 #!/bin/bash
 ADI="ASUMAN"
 echo $ADI
 
-
+----------------------------------------------------------------------------------------------------------------------
 basit toplama
 #!/bin/bash
 ADI="enes $((5 + 7))"
 echo $ADI
 
-
+---------------------------------------------------------------------------------------------------------------------
 Değişken uzunluğunu almak için ${#degisken_adi} kullanılır.
 #!/bin/bash
 ADI="asu enes"
 echo $ADI - ${#ADI}
 
-
+--------------------------------------------------------------------------------------------------------------------
 Sadece okunabilir değişken tanımlamak için readonly anahtar kelimesi kullanılır.
 #!/bin/bash
 readonly ADI="Asu Enes"
 ADI="Asu Enes Oray" # Uyarı verir.
 echo "Hoşgeldin, $ADI"
 
-
+---------------------------------------------------------------------------------------------------------------------
 Tanımlanan değişkeni kaldırmak için unset anahtar kelimesi kullanılır.
 #!/bin/bash
 ADI="Asu Enes"
 unset ADI
 echo "Hoşgeldin, $ADI"
 
-
+---------------------------------------------------------------------------------------------------------------------
 Dizi tanımlamak için aşağıdaki yöntemlerden birisi kullanılır.
 #!/bin/bash
 KISILER=("oray" "enes" "asu" "leo")
@@ -93,18 +94,18 @@ KISI[2]="asu"
 KISI[3]="leo"
 echo ${KISI[*]}  # tüm elemanlar
 
-
+---------------------------------------------------------------------------------------------------------------------
 Bash script ile işletim sistemine ait değişkenlere de erişilebilir.
 #!/bin/bash
 echo "Kullanıcı:" $USER
 echo "Dizin:" $HOME
 
-
+-------------------------------------------------------------------------------------------------------------------
 
 Diğer işletim sistemi değişkenlerini öğrenmek için aşağıdaki komut kullanılır.
 env
 
-
+------------------------------------------------------------------------------------------------------------------
 
 Oluşturulan değişkeni işletim sistemine atamak için export anahtar kelimesi kullanılır.
 #!/bin/bash
@@ -113,7 +114,7 @@ echo $ADI
 bash
 NOT: İşletim sistemi yeniden başlatıldıktan sonra değişken silinecektir.
 
-
+----------------------------------------------------------------------------------------------------------------------
 Değişkenlerde komut sonuçları saklanabilir.
 #!/bin/bash
 #SONUC=$(ls)
@@ -122,7 +123,7 @@ Değişkenlerde komut sonuçları saklanabilir.
 SONUC=`ls`
 echo $SONUC
 
-
+-----------------------------------------------------------------------------------------------------------------------------
 
 
 
