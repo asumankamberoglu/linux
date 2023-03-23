@@ -42,7 +42,7 @@ merhaba
             program
             
 
-
+echo -n "cHdkMQ==" | base64 -d         # code --> decode çalışması
 
 
 
