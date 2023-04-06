@@ -1,0 +1,19 @@
+#until kullanımı aşağıdaki gibidir.
+
+#until [ <şart> ]
+#do
+#  <komutlar>
+#done
+
+
+#until döngüsünün while döngüsünden farkı şart yanlış olduğu sürece çalışmasıdır.
+
+#!/bin/bash
+A=10
+
+until [ ! $A -gt 0 ]
+do
+  echo $A
+  A=$(($A - 1))
+  #A=`expr $A - 1`
+done

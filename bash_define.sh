@@ -3,7 +3,11 @@ echo "hello world"
 path=$(pwd)
 echo $path 
 echo "first variable :" $1                                #1. değişkeni gösterir.
-echo "second variable" $2                                 #2. değişkeni gösterir
+echo "second variable" $2                                 #2. değişkeni gösterir.
+
+NOT:bu script çalıştırılırken değerler ./dosyaname --> kısmından sonra yanına eklenmelidir.
+bash asuman 1 2 3 4 5  gibi yazılmalıdır.
+
 echo "script name :" $0                                   #Script adını gösterir. for example ./asuman
 echo "Argument Counter :" $#                              #Girilen argümanları sayar.
 echo "String form of all arguments :" $*                  #Tüm argümanların string şekli
@@ -12,8 +16,6 @@ echo "Bash is working ?" $?                               #Bash script başarı 
 echo "komut işlem numarası" $$                            #çalıştırılan komutun numarasını verir
 
 
-NOT:bu script çalıştırılırken değerler ./dosyaname --> kısmından sonra yanına eklenmelidir.
-bash asuman 1 2 3 4 5  gibi yazılmalıdır.
 ------------------------------------------------------------------------------------------------------------
 
 #bash script nedir?
