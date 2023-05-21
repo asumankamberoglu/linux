@@ -1,0 +1,25 @@
+kullanıcı işlemleri
+--------------------------------
+linux ta her şey bir dosyadır
+4 çeşit kullanıcımız var
+* root kullanıcısı; tüm işlemlere yetkili kullanıcı
+* sıradan kullanıcı; asuman gibi; bu kullanıcı sadece home/asuman altındaki dosyalarda işlem yapabilir, diğerleri için sudo kullanmak zorunda.
+* yetkilendirilmiş kullanıcı; root yetkisi olan dosyayı bir kullanıcıya verilmiş halidir.
+* root yetkisini kullanabilen kullanıcı
+
+birde aynı yetkiye sahip olan kullanıcı topluluklarına grup denir.
+grup işlemleri
+--------------------------
+
+
+other
+--------------------------
+
+
+dosya - dizin yetkileri 
+* kullanıcı
+* other
+* grup 
+dediğimiz 3 temel üzerine dayanıyor.
+ 
+
